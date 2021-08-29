@@ -18,8 +18,6 @@ namespace xadrez_console
                     {
                         Console.Clear();
                         Tela.imprimirPartida(partida);
-                        
-                        Console.WriteLine("Aguardando a jogada da " + partida.jogadorAtual);
 
                         Console.WriteLine();
                         Console.Write("Origem: ");
@@ -43,6 +41,8 @@ namespace xadrez_console
                         Console.ReadLine();
                     }
                 }
+                Console.Clear();
+                Tela.imprimirPartida(partida);
 
             }
             catch (TabuleiroException e)
